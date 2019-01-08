@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Application</title>
+    <link rel="stylesheet" type="text/css" href="css/chat-style.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
+<script src="appendMessage.js"></script>
+<body>
+    <div class="chatbox" id="chatbox">
+        <div class="chatlogos" id="chatlogos">
+            <div class="chat bot">
+                <div class="user-photo"><img src="img/img1.png"></div>
+                <p class="chat-message">What's up bro...!!
+                        <p class="time" style="right: -295px;"><small>4.20PM</small></p>
+                </p>
+            </div>
+            <div class="chat user">
+                <div class="user-photo"><img src="img/img2.jpg"></div>
+                <p class="chat-message">Doing good bro...!!
+                        <p class="time" style="right: -238px;"><small>4.20PM</small></p>
+                </p>
+            </div>
+        </div>
+
+        <div class="chat-form">
+            <textarea onkeyup="$('button').removeAttr('disabled')"></textarea>
+            <button onclick="appendMessages()" disabled="true">Send</button>
+        </div>
+
+    </div>
+</body>
+</html>
